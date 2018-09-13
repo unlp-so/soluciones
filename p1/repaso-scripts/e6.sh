@@ -11,7 +11,7 @@ mkdir -p backup
 
 for fname in $(ls); do
     if [ -f "$fname" ]; then
-        cp "$fname" "backup/$(echo "$fname" | tr '[a-z]' '[A-Z]')"
+        cp "$fname" "backup/$(echo "$fname" | tr 'a-z' 'A-Z')"
     fi
 done
 
